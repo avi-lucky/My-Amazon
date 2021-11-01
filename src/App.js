@@ -1,19 +1,18 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch } from 'react-router-dom';
 
-import Shop from "./pages/Shop";
-import Cart from "./pages/Cart";
-import MainNavigation from "./components/layout/MainNavigation";
-
+import Cart from './pages/Cart';
+import Shop from './pages/Shop';
+import MainNavigation from './components/layout/MainNavigation';
 
 function App() {
   return (
     <div>
       <MainNavigation />
       <Switch>
-        <Route path="/" exact>
+        <Route path='/' exact>
           <Shop />
         </Route>
-        <Route path="/cart">
+        <Route path='/cart'>
           <Cart />
         </Route>
       </Switch>

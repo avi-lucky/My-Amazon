@@ -1,21 +1,17 @@
-import { Link } from "react-router-dom";
-
-import classes from "./MainNavigation.module.css";
+import { Link } from 'react-router-dom';
 
 function MainNavigation() {
-
   return (
-    <header className={classes.header}>
-      <div className={classes.logo}> MY-AMAZON </div>
+    <header>
+      <div>My-Amazon</div>
       <nav>
         <ul>
           <li>
-            <Link to="/">Shop</Link>
+            <Link to='/'>Shop</Link>
           </li>
           <li>
-            <Link to="/Cart">Cart</Link>
+            <Link to='/cart'>Cart</Link>
           </li>
-
         </ul>
       </nav>
     </header>
