@@ -11,6 +11,7 @@ function ShopList(props) {
           image={shopping.image}
           title={shopping.title}
           description={shopping.description}
+          price={shopping.price}
         />
       ))}
     </ul>

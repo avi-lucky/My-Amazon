@@ -7,6 +7,7 @@ const DUMMY_DATA = [
       id: "m1",
       title: "HandCuffs",
       image: "https://m.media-amazon.com/images/I/51sc5vnUdDL.jpg",
+      price: 150,
       description:
         "This is a first, amazing cap which you definitely should not ignore. It will be a lot of fun!",
     },
@@ -14,6 +15,7 @@ const DUMMY_DATA = [
       id: "m2",
       title: "Clothera",
       image: "https://m.media-amazon.com/images/I/7151VjrBsNS._UX679_.jpg",
+      price: 350,
       description:
         "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
     }, 
@@ -21,6 +23,7 @@ const DUMMY_DATA = [
       id: "m3",
       title: "Hoodies",
       image: "https://m.media-amazon.com/images/I/51hFAXgwMUS._UL1500_.jpg",
+      price: 560,
       description:
         "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!",
     },
