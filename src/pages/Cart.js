@@ -11,7 +11,7 @@ function Cart() {
   if (cartCtx.totalCart === 0) {
     content = <p>You got no Carts yet. Start adding some?</p>;
   } else {
-    content = <ShopList shops={cartCtx.cart} />;
+    content = <ShopList shopping={cartCtx.cart} />;
   }
 
   return (

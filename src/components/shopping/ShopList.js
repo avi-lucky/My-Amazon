@@ -4,14 +4,14 @@ import classes from './ShopList.module.css';
 function ShopList(props) {
   return (
     <ul className={classes.list}>
-      {props.shopping.map((shopping) => (
+      {props.shopping.map((shopper) => (
         <ShopItem
-          key={shopping.id}
-          id={shopping.id}
-          image={shopping.image}
-          title={shopping.title}
-          description={shopping.description}
-          price={shopping.price}
+          key={shopper.id}
+          id={shopper.id}
+          image={shopper.image}
+          title={shopper.title}
+          description={shopper.description}
+          price={shopper.price}
         />
       ))}
     </ul>
