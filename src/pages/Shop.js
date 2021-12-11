@@ -49,11 +49,11 @@ function Shop() {
             var propValue = data[propName];
           }
         }
-        console.log(propValue);
+        // console.log(propValue);
         propValue.forEach(element => {
           shopping.push(element)
         });
-        console.log(shopping)
+        // console.log(shopping)
 
         setIsLoading(false);
         setLoadedShopping(shopping);
