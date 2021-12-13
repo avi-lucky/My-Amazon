@@ -44,16 +44,22 @@ function Shop() {
       .then((data) => {
         const shopping = [];
 
-        for (var propName in data) {
-          if (data.hasOwnProperty(propName)) {
-            var propValue = data[propName];
-          }
+        for (const key in data) {
+          const shop = {
+            id: key,
+            ...data[key],
+          };
+          shopping.push(shop);
         }
-        // console.log(propValue);
-        propValue.forEach(element => {
-          shopping.push(element)
-        });
-        // console.log(shopping)
+
+        // for (var propName in data) {
+        //   if (data.hasOwnProperty(propName)) {
+        //     var propValue = data[propName];
+        //   }
+        // }
+        // propValue.forEach(element => {
+        //   shopping.push(element)
+        // });
 
         setIsLoading(false);
         setLoadedShopping(shopping);
