@@ -35,9 +35,7 @@ function Shop() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(
-      "https://shopping-app-64fa6-default-rtdb.firebaseio.com/shopping.json"
-    )
+    fetch("https://fir-be2c8-default-rtdb.firebaseio.com/shopping.json")
       .then((response) => {
         return response.json();
       })
